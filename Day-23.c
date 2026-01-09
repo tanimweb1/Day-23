@@ -57,9 +57,36 @@ else{
 }
 
 
+
+
+
+// Copying all elements from array1 to array2
+int array1[100],array2[100],n;
+
+printf("How many numbers : ");
+scanf("%d",&n);
+printf("Enter the values of Array1 : ");
+for(int i = 0;i<n;i++){
+    scanf("%d",&array1[i]);
+}
+
+printf("Array 1 : ");
+for(int i = 0;i<n;i++){
+    printf("%d ", array1[i]);
+}
+
+for(int i = 0;i<n;i++){
+    array2[i] = array1[i];
+}
+
+printf("\nArray 2 : ");
+for(int i = 0;i<n;i++){
+    printf("%d ", array2[i]);
+}
     
 
 
     return 0;
 
 }
+
