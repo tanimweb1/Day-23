@@ -27,6 +27,39 @@ printf("Minimum is %d\n", min);
 
 
 
+// Linear search in Array 
+int a[100],n;
+printf("How many numbers : ");
+scanf("%d",&n); 
+printf("Enter the numbers of Array : ");
+for(int i = 0;i<n;i++){
+    scanf("%d",&a[i]);
+}
+
+int pos= -1,num;
+printf("Enter the number that you want to find : ");
+scanf("%d",&num);
+for(int i = 0;i<n;i++){
+
+    if(a[i]==num){
+        pos = i+1;
+        break;
+    }
+
+}
+
+if(pos==-1){
+    printf("Value is not find");
+
+}
+else{
+    printf("Value is found at position %d ", pos);
+}
+
+
+    
+
 
     return 0;
+
 }
